@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.menu {
+    background: rgb(83, 83, 83);
+    height: 670px;
+    width: 512px;
+    border-radius: 20px;
+}
+
+.menu-header {
+    margin: 5px;
+    background: rgb(134, 134, 134);
+    height: 75px;
+    border-radius: 20px;
+    padding: 4px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.menu-main {
+    position: relative;
+    margin: 5px;
+    background: rgb(109, 109, 109);
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-footer {
+    margin: 5px;
+    background: rgb(134, 134, 134);
+    height: 59px;
+    border-radius: 20px;
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas {
+    margin: 2px;
+    background: rgb(245, 245, 245);
+    height: 490px;
+    width: 490px;
+    border-radius: 3px;
+
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.canvas div {
+    border: 1px solid rgb(207, 207, 207);
+    cursor: crosshair;
+    transition: filter 0.1s ease;
+}
+
+.canvas div:hover {
+    background: rgb(230, 230, 230);
+}
+
+.colors,
+.tools {
+    flex: 1;
+    height: 66px;
+    background: rgb(214, 214, 214);
+    border-radius: 17px;
+    padding: 4px;
+    margin: 0;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.colors button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.colors button:nth-child(1) {
+    border-radius: 17px 5px 5px 5px;
+}
+
+.colors button:nth-child(8) {
+    border-radius: 5px 17px 5px 5px;
+}
+
+.colors button:nth-child(9) {
+    border-radius: 5px 5px 5px 17px;
+}
+
+.colors button:nth-child(16) {
+    border-radius: 5px 5px 17px 5px;
+}
+
+.tools {
+    display: flex;
+    gap: 5px;
+}
+
+.tools button {
+    flex: 1;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.eraser {
+    background: rgb(240, 240, 240);
+    color: black;
+}
+
+.bomb {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.clear {
+    background: rgb(230, 54, 54);
+    color: white;
+}
+
+.download-image {
+    flex: 1;
+    height: 100%;
+    border-radius: inherit;
+    border: none;
+    background: rgb(255, 107, 107);
+    cursor: pointer;
+    transition: background .3s ease;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.download-image:hover {
+    background: rgb(235, 95, 95);
+}
