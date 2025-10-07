@@ -85,6 +85,14 @@ body {
     margin: 0;
 }
 
+.tools button {
+    transition: transform 0.25s ease;
+}
+
+.tools button:hover {
+    transform: scale(1.1);
+}
+
 .colors {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -96,6 +104,11 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.colors button:hover {
+    transform: scale(1.1);
 }
 
 .colors button:nth-child(1) {
@@ -157,8 +170,10 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: white;
+    transition: transform 0.25s ease;
 }
 
 .download-image:hover {
+    transform: scale(1.03);
     background: rgb(235, 95, 95);
 }
